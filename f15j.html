@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>F-15J Eagle - Jamiepedia</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Same CSS as previous files -->
+  <style>
+       :root{
+      --side-width:360px;
+      --gap:1.5rem;
+      --panel-bg: #f8f9fa;
+    }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:1rem;color:#111;background:#fff}
+    header{margin-bottom:1rem;text-align:center}
+    h1{font-size:1.9rem;margin:.2rem 0}
+    h2{font-size:1.45rem;margin:.75rem 0}
+    h3{font-size:1.15rem;margin:.4rem 0}
+
+    /* two-column layout: article on the left (offset 200px), infobox pinned to the right */
+    .container{display:flex;gap:var(--gap);align-items:flex-start;align-content:flex-start}
+    .article{flex:1;min-width:0;order:1;text-align:left;margin-left:200px} /* uncentered, offset from left */
+
+    /* infobox styled to resemble Wikipedia's box and sit at the right edge */
+    .infobox{
+      width:var(--side-width);
+      min-width:var(--side-width);
+      order:2;
+      position:sticky;
+      top:1rem;
+      margin-left:auto;              /* pushes infobox to the right within the flex row */
+      margin-right:150px;           /* keep the box 150px from the right edge */
+      border-radius:2px;
+      overflow:hidden;
+      box-shadow:0 1px 2px rgba(0,0,0,0.06);
+      background:var(--panel-bg);
+      border:1px solid #a2a9b1;
+      display:block;
+      font-size:0.92rem;
+      text-align:center;
+    }
+
+    .infobox table{width:100%;border-collapse:collapse;background:#fff}
+    .infobox th:first-child{
+      background:#f0f6fb;
+      font-weight:700;
+      padding:.5rem;
+      text-align:center;
+      border-bottom:1px solid #a2a9b1;
+      font-size:1.05rem;
+    }
+    .infobox td{padding:.45rem;border-top:1px solid #dcdfe2;vertical-align:top;text-align:center}
+    .infobox .image{padding:.35rem;text-align:center;background:#fff}
+    .infobox .image img{display:block;margin:0 auto;border:1px solid #ddd;background:#fff}
+    .infobox .caption{font-size:.82rem;color:#333;text-align:center;padding:.5rem 6px 8px}
+    .infobox .group-head{background:#f7f9fb;text-align:center;padding:.45rem;font-weight:600;border-top:1px solid #dcdfe2}
+
+    main{max-width:980px}
+    img{max-width:100%;height:auto;display:block}
+    .section{margin:1rem 0}
+
+    /* responsive: stack on narrow screens (infobox below article) and remove left/right offsets */
+    @media (max-width:900px){
+      .container{flex-direction:column}
+      .infobox{position:relative;top:auto;width:100%;min-width:auto;margin-left:0;margin-right:0}
+      .article{margin-left:0}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>F-15J Eagle</h1>
+    <p style="margin:0;color:#444">Air superiority fighter — Japan / Mitsubishi Heavy Industries (overview)</p>
+  </header>
+
+  <div class="container">
+    <main class="article">
+      <section class="section">
+        <p><strong>F-15J</strong> (Japanese: F-15J イーグル) is an air superiority fighter operated by the Japan Air Self-Defense Force (JASDF). Manufactured under license by Mitsubishi Heavy Industries, it is a Japanese variant of the McDonnell Douglas F-15 Eagle. The aircraft serves as Japan's primary air defense fighter, featuring advanced radar systems and air-to-air capabilities.</p>
+      </section>
+
+      <section class="section">
+        <h2>History</h2>
+        <p>Japan selected the F-15 Eagle in 1978 as part of its modernization program. Licensed production began in 1981, with Mitsubishi leading domestic manufacture. Early aircraft were assembled from imported parts, with local content increasing in later production. The type has undergone several upgrade programs to maintain its effectiveness.</p>
+      </section>
+
+      <section class="section">
+        <h2>Design</h2>
+        <h3>Avionics</h3>
+        <p>The F-15J features a Japanese-developed J/APG-1 radar system, later upgraded to J/APG-2 in some aircraft. Modern variants include improved electronic warfare systems, Link 16 datalinks, and advanced mission computers. The cockpit incorporates both Japanese and American display systems.</p>
+
+        <h3>Performance</h3>
+        <p>Powered by two Pratt & Whitney F100 turbofan engines, the F-15J can achieve speeds up to Mach 2.5. The aircraft features excellent acceleration and high-altitude performance. Its large fuel capacity and conformal fuel tanks provide extended range for patrol missions.</p>
+
+        <h3>Armament</h3>
+        <p>Standard armament includes an M61A1 20mm cannon and various air-to-air missiles including the AAM-3, AAM-4, and AAM-5. The aircraft can carry up to eight missiles in various configurations. Modern upgrades have improved its beyond-visual-range combat capabilities.</p>
+      </section>
+
+      <section class="section">
+        <h2>Service</h2>
+        <p>The F-15J entered JASDF service in 1981 and serves as Japan's primary air defense fighter. They are stationed at several air bases across Japan and maintain continuous alert status. The fleet has been modernized through various upgrade programs to extend its service life.</p>
+      </section>
+
+      <section class="section">
+        <h2>Variants</h2>
+        <ul>
+          <li>F-15J: Single-seat fighter version</li>
+          <li>F-15DJ: Two-seat training version</li>
+          <li>F-15J Kai: Modernized variant</li>
+          <li>F-15J MSI: Multi-Stage Improvement upgraded version</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Operators</h2>
+        <p>Japan — operated by the Japan Air Self-Defense Force</p>
+      </section>
+    </main>
+
+    <aside class="infobox" aria-label="F-15J specifications">
+      <table>
+        <tbody>
+          <tr><th colspan="2">F-15J Eagle</th></tr>
+
+          <tr>
+            <td colspan="2" class="image">
+              <img src="f15j.jpg" alt="JASDF F-15J Eagle">
+              <div class="caption">JASDF F-15J Eagle during a demonstration flight</div>
+            </td>
+          </tr>
+
+          <tr><td class="group-head" colspan="2">Service history</td></tr>
+          <tr><th style="text-align:left">In service</th><td>1981–present</td></tr>
+
+          <tr><td class="group-head" colspan="2">Production history</td></tr>
+          <tr><th style="text-align:left">Manufacturer</th><td>Mitsubishi Heavy Industries</td></tr>
+          <tr><th style="text-align:left">Designed by</th><td>McDonnell Douglas</td></tr>
+          <tr><th style="text-align:left">First flight</th><td>1981</td></tr>
+          <tr><th style="text-align:left">Number built</th><td>213 (F-15J/DJ)</td></tr>
+
+          <tr><td class="group-head" colspan="2">Specifications</td></tr>
+          <tr><th style="text-align:left">Crew</th><td>1 (2 in F-15DJ)</td></tr>
+          <tr><th style="text-align:left">Length</th><td>19.43 m</td></tr>
+          <tr><th style="text-align:left">Wingspan</th><td>13.05 m</td></tr>
+          <tr><th style="text-align:left">Height</th><td>5.63 m</td></tr>
+          <tr><th style="text-align:left">Max speed</th><td>Mach 2.5</td></tr>
+          <tr><th style="text-align:left">Range</th><td>2,900 km</td></tr>
+          <tr><th style="text-align:left">Service ceiling</th><td>20,000 m</td></tr>
+          <tr><th style="text-align:left">Armament</th><td>1× 20 mm M61A1 cannon<br>8× air-to-air missiles</td></tr>
+          <tr><th style="text-align:left">Powerplant</th><td>2× Pratt & Whitney F100 turbofans</td></tr>
+          <tr><th style="text-align:left">Manufacturer location</th><td> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12978493.589874467!2d125.00564331580591!3d37.423459204948315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022f632e42dacaf%3A0x1d236cf505907257!2sMitsubishi%20Heavy%20Industries!5e0!3m2!1sen!2suk!4v1762352954835!5m2!1sen!2suk" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td></tr>
+        </tbody>
+      </table>
+    </aside>
+  </div>
+
+  <footer style="margin-top:2rem;color:#666;font-size:.9rem;text-align:center">
+    <p>Source: cleaned local copy of the provided article. External navigation and tools removed for offline presentation.</p>
+  </footer>
+</body>
+</html>
