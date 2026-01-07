@@ -1,0 +1,117 @@
+<html>
+    <style>
+body{
+    /* background-image: url('hq720.jpg'); */
+    background-size: contain;
+    background-color: #000000;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+head{
+    background-color: #ff0000;
+}
+.btn {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+.btn:hover { background: rgba(255,255,255,0.08); }
+
+.button-row { margin-top: 12px; text-align:center; }
+
+.bottom-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+.bottom-bar .btn {
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+.side-image {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 80vh;
+  width: auto;
+  z-index: 2;
+  opacity: 0.95;
+  
+}
+.side-image.left { left: 8px; }
+.side-image.right { right: 8px; }
+@media (max-width: 1000px) {
+  .side-image { display: none; }
+}
+@media (max-width: 480px) {
+  .bottom-bar { display: none; }
+}
+
+</style> 
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style1.css">
+        <title>
+            Homepage 
+        </title>
+        <center>
+        <h1>
+            Jamie's Model Website
+        </h1>
+
+       
+        <div class="button-row">
+          <a class="btn" href="modelcatalog.html">All models</a>
+          <a class="btn" href="tutorials.html">Tutorials</a>
+          <a class="btn" href="gallery.html"> Gallery</a>
+        </div>
+
+        </center>
+    </head>
+    <body>
+        
+        <img class="side-image left" src="jsdfnobg.png" alt="Left decoration">
+        <img class="side-image right" src="jasdfcropnobg.png" alt="Right decoration">
+
+        <div class="content">
+        <center>
+        <p>
+           ABOUT ME   
+             
+        </p>
+        Hello, Its me Jamie, and here is my website.
+        Some things to note is that despite coding it correctly, the youtube embeds on the tutorial website arent working, but trust me, theyre there. If I put more time into it, I would download them as mp4s and embed them that way
+        Other than that, if this is the first page you've seen, you're looking in the correct order, but you can return here from every site except the individual catalog sites, where you will have to use the back button.
+        Enjoy my website!
+        <p></p>
+        </center>
+        </div>
+        <div class="bottom-bar" aria-label="bottom navigation">
+  <a class="btn" href="https://x.com/kensumie"><img src="twitter.png" alt="Twitter" style="width: 50px; height: 32px; vertical-align:middle;"></a>
+  <a class="btn" href="https://www.instagram.com/kensumiesfm/"><img src="instagram.png" alt="Instagram" style="width:32px; height: 32px; vertical-align:middle;"></a>
+  <a class="btn" href="https://www.youtube.com/@Kensumie"> <img src="youtube.png" alt="YouTube" style="width: 32px; height: 32px; vertical-align:middle;"></a>
+</div>
+    </body>
+</html>
